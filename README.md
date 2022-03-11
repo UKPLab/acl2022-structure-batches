@@ -25,7 +25,7 @@ https://www.ukp.tu-darmstadt.de/
 https://www.tu-darmstadt.de/
 
 
-Don't hesitate to send us an e-mail or report an issue, if something is broken (and it shouldn't be) or if you have further questions.
+Don't hesitate to e-mail us or report an issue, if something is broken (and it shouldn't be) or if you have further questions.
 
 > This repository contains experimental software and is published for the sole purpose of giving additional background details on the respective publication.
 
@@ -65,17 +65,17 @@ To start a training you can call the script `python3 run.py`. For gathering the 
 To adjust the training settings `run.py` provides you with the following parameters:
 
 * `--data_file`, the path to the specific file with the training instances, default `../data/sample_fold_0.csv`
-* `--num_labels`, the number of labels of the training task, default `2
+* `--num_labels`, the number of labels of the training task, default `2`
 * `--directed`, a flag parameter that indicate that the label describes a directed, if not just leave it out
 * `--dev_sets`, the sets using for development in the provided csv file, default `dev`
 * `--test_sets`, the sets using for testing in the provided csv file, default `dev`
 * `--model_name`, the Huggingface tag of the pre-trained language model you wish to use, default `bert-base-uncased`
-* `--strategy`, the specific batching strategy you want to apply either `BI_BASELINE, BI_NODE, BI_EDGE1, BI_EDGE2` for bi-enocders or `CROSS_BASELINE, CROSS_NODE, CROSS_EDGE1, CROSS_EDGE2` for cross-encoders, default `BI_NODE`
+* `--strategy`, the specific batching strategy you want to apply either `BI_BASELINE, BI_NODE, BI_EDGE1, BI_EDGE2` for bi-encoders or `CROSS_BASELINE, CROSS_NODE, CROSS_EDGE1, CROSS_EDGE2` for cross-encoders, default `BI_NODE`
 * `--seed`, the random seed to use, default `0`
 * `--batch_size`, the number of nodes or edges to sample within one batch, default `8`
 * `--learning_rate`, the learning rate to use, default `0.00002`
 * `--num_epochs`, the number of epochs to train on, default `5`
-* `--warmup_proportion`, portion of epochs to use as warmup period, default `0.1
+* `--warmup_proportion`, portion of epochs to use as warmup period, default `0.1`
 * `--wandb_tag_prefix`, the prefix for the wandb tag, default `8`
 * `--wandb_project`, the wandb project to use, default ``
 * `--max_tokens`, the maximum of tokens to process within one step. If batch has more token, the training use gradient accumulation to efficient process a batch, default `6000`
