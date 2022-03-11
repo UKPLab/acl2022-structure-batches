@@ -1,6 +1,6 @@
 # Composing Structure-Aware Batches for Pairwise Sentence Classification
 
-With this repository we make the source code of our approach of **Exploiting Dataset Structures to Improve Pairwise Sentence Classification** public available.
+With this repository we make the source code of our paper **Exploiting Dataset Structures to Improve Pairwise Sentence Classification** public available.
 
 Please use the following citation:
 
@@ -63,6 +63,7 @@ To start a training you can call the script `python3 run.py`. For gathering the 
 
 ### Parameter description
 To adjust the training settings `run.py` provides you with the following parameters:
+
 * `--data_file`, the path to the specific file with the training instances, default `../data/sample_fold_0.csv`
 * `--num_labels`, the number of labels of the training task, default `2
 * `--directed`, a flag parameter that indicate that the label describes a directed, if not just leave it out
