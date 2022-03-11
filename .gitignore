@@ -1,10 +1,5 @@
 /src/wandb/
 /wandb
 /.idea
-!/data/toy_example_fold_0.csv
-!/data/toy_example_fold_1.csv
-!/data/toy_example_fold_2.csv
-!/data/toy_example_original.csv
-/data
 /venv
  .DS_Store
