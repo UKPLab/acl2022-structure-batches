@@ -4,7 +4,7 @@
 /data
 /venv
  .DS_Store
-!/data/sample_fold_0.csv
-!/data/sample_fold_1.csv
-!/data/sample_fold_2.csv
-!/data/sample_original.csv
+!/data/toy_example_fold_0.csv
+!/data/toy_example_fold_1.csv
+!/data/toy_example_fold_2.csv
+!/data/toy_example_original.csv
